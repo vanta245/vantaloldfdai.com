@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Vanta — About Us</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#070707;--surface:#111;--fg:#fff;--muted:#9a9a9a;--line:#262626;color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:'Space Grotesk',system-ui,-apple-system,'Segoe UI',sans-serif;line-height:1.6}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+nav{display:flex;align-items:center;justify-content:space-between;padding:24px 0}
+.brand{display:flex;align-items:center;gap:12px;font-weight:700;letter-spacing:.28em;font-size:15px}
+.brand svg{width:34px;height:auto}
+nav ul{display:flex;gap:28px;list-style:none;margin:0;padding:0;font-size:14px;color:var(--muted)}
+nav a:hover{color:var(--fg)}
+.hero{min-height:78vh;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding:64px 0}
+.eyebrow{font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:var(--muted);margin:0 0 20px}
+h1{font-size:clamp(44px,9vw,104px);line-height:1;letter-spacing:-.03em;margin:0 0 28px;font-weight:700}
+.lead{max-width:560px;font-size:clamp(17px,2.2vw,20px);color:var(--muted);margin:0 0 36px}
+.btn{display:inline-block;padding:14px 28px;border:1px solid var(--fg);font-size:14px;letter-spacing:.12em;text-transform:uppercase;transition:.2s}
+.btn:hover{background:var(--fg);color:var(--bg)}
+section{padding:88px 0;border-top:1px solid var(--line)}
+h2{font-size:clamp(28px,4.5vw,44px);letter-spacing:-.02em;line-height:1.1;margin:0 0 24px;font-weight:700}
+.two{display:grid;grid-template-columns:1fr 1.4fr;gap:48px}
+.two p{color:var(--muted);font-size:18px;margin:0 0 18px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);margin-top:40px}
+.card{background:var(--bg);padding:36px 28px}
+.card .n{font-size:13px;color:var(--muted);letter-spacing:.2em}
+.card h3{margin:14px 0 10px;font-size:20px}
+.card p{margin:0;color:var(--muted);font-size:15px}
+.soon{text-align:center;background:var(--surface)}
+.soon .badge{display:inline-block;border:1px solid var(--line);padding:6px 16px;font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:var(--muted);margin-bottom:24px}
+.soon p{color:var(--muted);max-width:520px;margin:0 auto 32px;font-size:18px}
+.notify{display:flex;gap:8px;max-width:440px;margin:0 auto;flex-wrap:wrap;justify-content:center}
+.notify input{flex:1 1 220px;padding:14px 16px;background:var(--bg);border:1px solid var(--line);color:var(--fg);font:inherit}
+.notify input:focus,.btn:focus-visible,a:focus-visible{outline:2px solid var(--fg);outline-offset:3px}
+.notify button{padding:14px 24px;background:var(--fg);color:var(--bg);border:0;font:inherit;font-weight:700;letter-spacing:.1em;text-transform:uppercase;font-size:13px;cursor:pointer}
+#msg{min-height:24px;margin-top:16px;font-size:14px;color:var(--muted)}
+footer{border-top:1px solid var(--line);padding:32px 0;color:var(--muted);font-size:13px}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+@media(max-width:720px){.two{grid-template-columns:1fr;gap:16px}nav ul{display:none}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav>
+  <a class="brand" href="#top" aria-label="Vanta home">
+    <svg viewBox="455 268 380 318" fill="#fff" aria-hidden="true"><path d="M461 274H578L556 312H483Z"/><path d="M499 339L541 336L667 543L645 580Z"/><path d="M556 312L578 274L672 445L672 518Z"/><path d="M697 274H829L808 312H733L681 397L660 362Z"/><path d="M750 336H792L681 518V445Z"/></svg>
+    VANTA
+  </a>
+  <ul><li><a href="#about">About</a></li><li><a href="#values">Values</a></li><li><a href="#products">Products</a></li></ul>
+</nav>
+
+<header class="hero" id="top">
+  <p class="eyebrow">About Vanta</p>
+  <h1>Built in the dark.<br>Made to stand out.</h1>
+  <p class="lead">Vanta is a brand rooted in restraint: bold lines, honest craft, and nothing that doesn’t earn its place.</p>
+  <a class="btn" href="#products">What’s coming</a>
+</header>
+
+<section id="about">
+  <div class="two">
+    <h2>Who we are</h2>
+    <div>
+      <p>Vanta takes its name from the deepest black: a color that absorbs everything and lets what matters stand out. That idea shapes how we think, design, and build.</p>
+      <p>We believe great products come from focus. Fewer features, sharper details, and an obsession with how things feel in your hands and look in the world.</p>
+      <p>We’re a small team with a clear direction, and we’re getting ready to share what we’ve been working on.</p>
+    </div>
+  </div>
+</section>
+
+<section id="values">
+  <h2>What we stand for</h2>
+  <div class="grid">
+    <div class="card"><span class="n">01</span><h3>Precision</h3><p>Every edge, angle, and detail is deliberate. If it doesn’t serve a purpose, it goes.</p></div>
+    <div class="card"><span class="n">02</span><h3>Boldness</h3><p>We prefer a strong point of view over safe, forgettable choices.</p></div>
+    <div class="card"><span class="n">03</span><h3>Quality</h3><p>Made to last, and made to be proud of. We don’t cut corners.</p></div>
+  </div>
+</section>
+</div>
+
+<section id="products" class="soon">
+  <div class="wrap">
+    <span class="badge">Coming soon</span>
+    <h2>Our products are on the way</h2>
+    <p>We’re putting the finishing touches on our first collection. Leave your email and you’ll be the first to know when it drops.</p>
+    <div class="notify">
+      <input id="email" type="email" placeholder="you@email.com" aria-label="Email address" autocomplete="email">
+      <button type="button" id="go">Notify me</button>
+    </div>
+    <div id="msg" role="status" aria-live="polite"></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap"><span>© 2026 Vanta. All rights reserved.</span><span>Products coming soon.</span></div>
+</footer>
+
+<script>
+document.getElementById('go').addEventListener('click',function(){
+  var e=document.getElementById('email'),m=document.getElementById('msg');
+  if(/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e.value)){m.textContent='Thanks! We’ll let you know when we launch.';e.value='';}
+  else{m.textContent='Please enter a valid email address.';}
+});
+</script>
+</body>
+</html>
